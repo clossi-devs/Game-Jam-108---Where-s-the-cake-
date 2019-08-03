@@ -12,6 +12,9 @@ public class Clos_ShooterScript : MonoBehaviour
     [Header("Shooter Settings")]
     public bool canFire = true;
     public string fireKey = "space";
+    [Tooltip("Add a delay before the player can fire another bullet.")]
+    public bool delayRefire = true;
+    public float refireDelay = 0.25f;
 
     [Header("Objects")]
     public GameObject bullet;
@@ -40,7 +43,19 @@ public class Clos_ShooterScript : MonoBehaviour
     {
         if (canFire)
         {
-            if (Input.GetKeyDown(fireKey)) { SpawnBullet(); }
+            if (Input.GetKeyDown(fireKey))
+            {
+                SpawnBullet();
+                if (delayRefire) { canFire = false; StartCoroutine(WaitForRefire()); }
+            }
         }
+    }
+
+    IEnumerator WaitForRefire ()
+    {
+        Debug.Log("Waiting");
+        yield return new WaitForSeconds(refireDelay);
+        canFire = true;
+        Debug.Log("Wait Over");
     }
 }
