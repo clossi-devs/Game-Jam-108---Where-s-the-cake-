@@ -15,14 +15,14 @@ public class Clos_PlayerCamera : MonoBehaviour
     public GameObject lookAt;
 
     [Header("Offset Position Settings")]
-    public float offSetX;
-    public float offSetY;
-    public float offSetZ;
+    public float offSetX = 0.0f;
+    public float offSetY = 1.0f;
+    public float offSetZ = 0.0f;
 
     [Header("Rotation")]
-    public float rotX;
-    public float rotY;
-    public float rotZ;
+    public float rotX = 0.0f;
+    public float rotY = 0.0f;
+    public float rotZ = 0.0f;
 
 
     // Start is called before the first frame update

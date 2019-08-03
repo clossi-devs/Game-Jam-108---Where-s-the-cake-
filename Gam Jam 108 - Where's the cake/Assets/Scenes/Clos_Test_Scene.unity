@@ -653,9 +653,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookAt: {fileID: 791922470}
   offSetX: 0
-  offSetY: 4
-  offSetZ: -10
-  rotX: 20
+  offSetY: 1
+  offSetZ: 0
+  rotX: 0
   rotY: 0
   rotZ: 0
 --- !u!1 &1490502369
