@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6369895246509344878}
   - component: {fileID: 6369895246509344865}
   - component: {fileID: 6148232386442651938}
+  - component: {fileID: -8643664018955275301}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -88,7 +89,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6369895246509344864}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -105,6 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36c9f05f25df7eb48b1414c247a3e462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usingClos_CustomEnemies: 1
   destroyThis: 1
   lifeSpan: 3
   moveOnSpawn: 1
@@ -112,3 +114,22 @@ MonoBehaviour:
   moveX: 0
   moveY: 0
   moveZ: 1
+  usingDmg: 1
+  tagToDmg: Enemy
+  dmg: 10
+--- !u!54 &-8643664018955275301
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6369895246509344864}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
