@@ -53,9 +53,7 @@ public class Clos_ShooterScript : MonoBehaviour
 
     IEnumerator WaitForRefire ()
     {
-        Debug.Log("Waiting");
         yield return new WaitForSeconds(refireDelay);
         canFire = true;
-        Debug.Log("Wait Over");
     }
 }

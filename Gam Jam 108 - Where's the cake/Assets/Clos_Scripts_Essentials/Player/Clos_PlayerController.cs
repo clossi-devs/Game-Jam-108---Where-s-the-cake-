@@ -116,15 +116,12 @@ public class Clos_PlayerController : MonoBehaviour
 
     private void MovePlayerForward ()
     {
-        if (canMoveForward)
-        {
-            rb.MovePosition(this.transform.position + this.transform.forward * forward * Time.deltaTime);
-        }
+        if (canMoveForward) { transform.Translate(Vector3.forward * forward * Time.deltaTime); }
     }
 
     private void MovePlayerSideways()
     {
-        if (canMoveSideways) { rb.MovePosition(transform.position + transform.right * side * Time.deltaTime); }
+        if (canMoveSideways) { transform.Translate(Vector3.right * side * Time.deltaTime); }
     }
 
     private void RotatePlayer ()
