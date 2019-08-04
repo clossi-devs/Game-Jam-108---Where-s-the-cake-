@@ -56,7 +56,7 @@ public class Clos_CustomEnemies : MonoBehaviour
         if (detroyOnMinHP) { if (es.hp <= es.minHP) { DestroyThisObject(); } }
     }
 
-    private void DestroyThisObject ()
+    public void DestroyThisObject ()
     {
         Destroy(this.gameObject);
     }

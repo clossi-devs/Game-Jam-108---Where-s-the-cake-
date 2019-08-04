@@ -51,9 +51,9 @@ public class EnemyStats
     }
 
 
-    // *********************
+    // *******************************
     // ** Health Management Section
-    // *********************
+    // *******************************
 
     /// <summary>
     /// Takes the amount given from hp. Will set to minHP is lower than minHP.
@@ -81,6 +81,19 @@ public class EnemyStats
     public void ResetHP()
     {
         hp = maxHP + bonusHP;
+    }
+
+    // *******************************
+    // ** Attack Management Section
+    // *******************************
+
+    /// <summary>
+    /// Get the damage from this enemy.
+    /// </summary>
+    /// <returns>Returns atk + bonusAtk</returns>
+    public int GetDamage ()
+    {
+        return atk + bonusAtk;
     }
 }
 
