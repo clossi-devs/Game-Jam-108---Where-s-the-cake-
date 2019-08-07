@@ -47,8 +47,20 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: fbfaaee8a795464bbbb644b1f7853eac
     GuidInternal: 
-    m_lastTime: -8586364127614775808
+    m_lastTime: -8586364047494775808
     List:
+    - name: Gun_Shot
+      guid: 35ff3d8666fc22469f247a64a1c26fbd
+      id: 3666238164
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Gun_Shot
+        ObjectType: 3
+      Path: Default Work Unit\Gun_Shot
+      maxAttenuation: 0
+      maxDuration: 3.156801
+      minDuration: 2.173461
     - name: Music_Start
       guid: dc0c97ef76216142aebb0823075f80ec
       id: 3725903807
@@ -122,8 +134,5 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Where's The Cake
-  - /Where's The Cake/States
-  - /Where's The Cake/States/Default Work Unit
-  - /Where's The Cake/States/Default Work Unit/Enemy_Aware
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

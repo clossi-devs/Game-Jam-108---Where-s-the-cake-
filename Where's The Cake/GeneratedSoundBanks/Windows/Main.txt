@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	3666238164	Gun_Shot			\Default Work Unit\Gun_Shot	
 	3725903807	Music_Start			\Default Work Unit\Music_Start	
 
 State Group	ID	Name			Wwise Object Path	Notes
@@ -23,4 +24,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	329791831	WheresTheCakeTomsLayerBeat	E:\Game Jams\Week 108\Game-Jam-108---Where-s-the-cake-\Where's The Cake\.cache\Windows\SFX\WheresTheCakeTomsLayerBeat_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\General\WheresTheCakeFinal_C\WheresTheCakeTomsLayerBeat		2709568
 	559594319	WheresTheCakeSynthArp	E:\Game Jams\Week 108\Game-Jam-108---Where-s-the-cake-\Where's The Cake\.cache\Windows\SFX\WheresTheCakeSynthArp_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\General\WheresTheCakeFinal_A\WheresTheCakeSynthArp		2709568
 	609967174	WheresTheCakeFinalC	E:\Game Jams\Week 108\Game-Jam-108---Where-s-the-cake-\Where's The Cake\.cache\Windows\SFX\WheresTheCakeFinalC_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\General\WheresTheCakeFinal_C\WheresTheCakeFinalC		9483328
+	704006255	GunShot	E:\Game Jams\Week 108\Game-Jam-108---Where-s-the-cake-\Where's The Cake\.cache\Windows\SFX\GunShot_7022E990.wem		\Actor-Mixer Hierarchy\Default Work Unit\GunShot\Shots\GunShot		514296
+	712125958	GunShot_01	E:\Game Jams\Week 108\Game-Jam-108---Where-s-the-cake-\Where's The Cake\.cache\Windows\SFX\GunShot_7D6E1E75.wem		\Actor-Mixer Hierarchy\Default Work Unit\GunShot\Shots\GunShot_01		525116
+	759279080	GunShot_02	E:\Game Jams\Week 108\Game-Jam-108---Where-s-the-cake-\Where's The Cake\.cache\Windows\SFX\GunShot_6C755D78.wem		\Actor-Mixer Hierarchy\Default Work Unit\GunShot\Shots\GunShot_02		456004
+	905969052	GunShot_03	E:\Game Jams\Week 108\Game-Jam-108---Where-s-the-cake-\Where's The Cake\.cache\Windows\SFX\GunShot_D40B9948.wem		\Actor-Mixer Hierarchy\Default Work Unit\GunShot\Shots\GunShot_03		556924
 
