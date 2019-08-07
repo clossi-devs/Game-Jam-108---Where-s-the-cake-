@@ -9,32 +9,7 @@ ModelImporter:
   - first:
       74: -8945691123924629249
     second: Armature|Idle
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CandleHeadMaterial
-    second: {fileID: 2100000, guid: 0b18fca5e1543174c8e0baa4076c4bab, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CandleShaftMaterial
-    second: {fileID: 2100000, guid: b0d41b13d129b5a40b010eb71eb7e00a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.002
-    second: {fileID: 2100000, guid: 8c0cc451e3568f94ba352c6175ac4d3e, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: CandleHeadColor
-    second: {fileID: 2800000, guid: 871bf979f9de15e49aaf571b90eb969f, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: CandleShaftColor
-    second: {fileID: 2800000, guid: c842cadb67180a949bb1f1eef8b33ca1, type: 3}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
