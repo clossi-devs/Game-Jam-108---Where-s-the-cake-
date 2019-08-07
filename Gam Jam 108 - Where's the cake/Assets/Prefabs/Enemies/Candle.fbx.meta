@@ -4,11 +4,11 @@ ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
   - first:
-      74: 4723146814002874508
-    second: Candle Attack
+      74: -7953219105547963338
+    second: CandleRig|Attack
   - first:
-      74: -8945691123924629249
-    second: Candle Idle
+      74: 1136552262018134110
+    second: CandleRig|Idle
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -38,9 +38,9 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Candle Attack
-      takeName: Armature|Attack
-      internalID: 4723146814002874508
+      name: CandleRig|Attack
+      takeName: CandleRig|Attack
+      internalID: -7953219105547963338
       firstFrame: 0
       lastFrame: 39
       wrapMode: 0
@@ -49,7 +49,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -67,9 +67,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Candle Idle
-      takeName: Armature|Idle
-      internalID: -8945691123924629249
+      name: CandleRig|Idle
+      takeName: CandleRig|Idle
+      internalID: 1136552262018134110
       firstFrame: 0
       lastFrame: 119
       wrapMode: 0
@@ -78,7 +78,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

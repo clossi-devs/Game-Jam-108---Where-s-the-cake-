@@ -4,11 +4,11 @@ ModelImporter:
   serializedVersion: 26
   internalIDToNameTable:
   - first:
-      74: 4723146814002874508
-    second: Cup Cake Attack
+      74: 1035764564187740940
+    second: CupcakeRig|Attack
   - first:
-      74: -8945691123924629249
-    second: Cup Cake Idle
+      74: 1958568561367275571
+    second: CupcakeRig|Idle
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -38,9 +38,9 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Cup Cake Attack
-      takeName: Armature|Attack
-      internalID: 4723146814002874508
+      name: CupcakeRig|Attack
+      takeName: CupcakeRig|Attack
+      internalID: 1035764564187740940
       firstFrame: 0
       lastFrame: 39
       wrapMode: 0
@@ -49,7 +49,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -67,9 +67,9 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Cup Cake Idle
-      takeName: Armature|Idle
-      internalID: -8945691123924629249
+      name: CupcakeRig|Idle
+      takeName: CupcakeRig|Idle
+      internalID: 1958568561367275571
       firstFrame: 0
       lastFrame: 119
       wrapMode: 0
@@ -78,7 +78,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
