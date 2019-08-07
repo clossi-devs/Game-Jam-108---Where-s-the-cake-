@@ -1624,7 +1624,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c57558fda5ca4f54ba533d04c62221d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clos_CustomEnemies: 1
-  clos_EnemyStats: 1
   playerTag: Player
   destroyOnDmgPlayer: 1
