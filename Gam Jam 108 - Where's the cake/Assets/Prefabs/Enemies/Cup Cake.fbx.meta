@@ -5,10 +5,10 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: 4723146814002874508
-    second: Armature|Attack
+    second: Cup Cake Attack
   - first:
       74: -8945691123924629249
-    second: Armature|Idle
+    second: Cup Cake Idle
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -38,7 +38,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|Attack
+      name: Cup Cake Attack
       takeName: Armature|Attack
       internalID: 4723146814002874508
       firstFrame: 0
@@ -67,7 +67,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|Idle
+      name: Cup Cake Idle
       takeName: Armature|Idle
       internalID: -8945691123924629249
       firstFrame: 0
