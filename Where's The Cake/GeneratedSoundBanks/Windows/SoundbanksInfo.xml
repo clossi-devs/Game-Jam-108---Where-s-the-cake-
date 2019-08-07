@@ -21,8 +21,30 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3050945240" Name="New_Event" ObjectPath="\Events\Default Work Unit\New_Event" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3725903807" Name="Music_Start" ObjectPath="\Events\Default Work Unit\Music_Start" DurationType="Infinite"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="192542880" Language="SFX">
+					<ShortName>WheresTheCakeTomsLayer.wav</ShortName>
+					<Path>SFX\WheresTheCakeTomsLayer_D79FB2B7.wem</Path>
+				</File>
+				<File Id="226429881" Language="SFX">
+					<ShortName>WheresTheCakeFinal.wav</ShortName>
+					<Path>SFX\WheresTheCakeFinal_D79FB2B7.wem</Path>
+				</File>
+				<File Id="329791831" Language="SFX">
+					<ShortName>WheresTheCakeTomsLayerBeat.wav</ShortName>
+					<Path>SFX\WheresTheCakeTomsLayerBeat_D79FB2B7.wem</Path>
+				</File>
+				<File Id="559594319" Language="SFX">
+					<ShortName>WheresTheCakeSynthArp.wav</ShortName>
+					<Path>SFX\WheresTheCakeSynthArp_D79FB2B7.wem</Path>
+				</File>
+				<File Id="609967174" Language="SFX">
+					<ShortName>WheresTheCakeFinalC.wav</ShortName>
+					<Path>SFX\WheresTheCakeFinalC_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

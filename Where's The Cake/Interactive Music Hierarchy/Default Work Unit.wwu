@@ -1,6 +1,1198 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{55CA55A2-813A-412C-A186-7B1E992A6625}" SchemaVersion="94">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{55CA55A2-813A-412C-A186-7B1E992A6625}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{55CA55A2-813A-412C-A186-7B1E992A6625}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="General" ID="{C0BD4748-05DB-4380-AFF2-0E8CADFE3D8F}" ShortID="413012603">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="125"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0822EF99-B233-4E26-B44A-E4B4795832C9}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{185F7D88-085C-4667-9E9E-EAFE496156ED}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="WheresTheCakeFinal_Intro" ID="{87FC76BD-CF63-4312-BF36-DBA5AF0FD0F2}" ShortID="1029320334">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="7680"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0822EF99-B233-4E26-B44A-E4B4795832C9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="WheresTheCakeFinal" ID="{A98C87F4-45A1-45A0-A3E8-DF47ECA67D19}" ShortID="717684795">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WheresTheCakeFinal" ID="{2F6CABD8-FCEC-4467-90BE-59750B274C71}" ShortID="226429881">
+											<Language>SFX</Language>
+											<AudioFile>WheresTheCakeFinal.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{CB80D796-1AF3-43F9-84E5-78C54F9A6EBB}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{E6324053-8467-4ABA-BFB6-94B07245E6A7}">
+											<ClipList>
+												<MusicClip Name="WheresTheCakeFinal" ID="{AEB293DC-CAAD-466B-BAFA-EC9F5100A14E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="7679.99999999998"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="WheresTheCakeFinal" ID="{2F6CABD8-FCEC-4467-90BE-59750B274C71}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{9994E720-8445-485E-8BB7-E9BBA763199C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>7.68</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{B5E656B9-E763-4572-9448-163827B0AF2D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>7.68</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{2044525F-9F77-4FA8-BBF6-26346C95B874}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>7.68</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{9226582E-1C7B-4580-8ECE-A5338BF554BF}"/>
+								<MusicCue Name="Exit Cue" ID="{F36F095F-223C-4902-AB37-9C3C3C9CEA54}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="7680"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="WheresTheCakeFinal_A" ID="{DCF60301-49FD-4C65-8A1C-6B5E43D15354}" ShortID="831000899">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="20386.3687530822"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0822EF99-B233-4E26-B44A-E4B4795832C9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="WheresTheCakeFinal" ID="{0A664DED-9140-488A-BFF9-DE8B0CEAEE0D}" ShortID="126073872">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WheresTheCakeFinal" ID="{1CECA71D-ACE9-4F29-999E-932267FF6285}" ShortID="1007622164">
+											<Language>SFX</Language>
+											<AudioFile>WheresTheCakeFinal.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="226429881"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{41BC2738-861F-4BB6-9FE3-716BE4427484}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{772CC9CB-D547-4420-9C3B-B5C0ADCEDD80}">
+											<ClipList>
+												<MusicClip Name="WheresTheCakeFinal" ID="{5326464E-9E59-4F68-AD1F-EEA3B2D3C4FB}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="7680"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="26880"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-7680"/>
+													</PropertyList>
+													<AudioSourceRef Name="WheresTheCakeFinal" ID="{1CECA71D-ACE9-4F29-999E-932267FF6285}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{4036F08D-1ECE-4162-901C-7F4B66300B61}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>7.68</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>26.88</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{4185DD0B-6371-482D-A153-FA1E3ABEBD4B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>7.68</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>26.88</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{E01A971B-CFBB-40AA-B8E8-A239B47BC96C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>7.68</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>26.88</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="WheresTheCakeSynthArp" ID="{F170C037-BCE5-4EF1-B424-2EB0E852286F}" ShortID="25989228">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WheresTheCakeSynthArp" ID="{4F92D5CE-EB18-4BE3-980B-F6F6D453ED17}" ShortID="559594319">
+											<Language>SFX</Language>
+											<AudioFile>WheresTheCakeSynthArp.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo MusicSyncType="3">
+												<StateGroupRef Name="Enemy_Aware" ID="{4B3F48E2-5E49-400E-8F33-1F12A07230C6}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="No" ID="{EC8ECBC7-FF2D-4192-A1FA-B188B307B1F1}"/>
+												<CustomState Name="" ID="{1F058657-F8F1-4A11-B59A-F6FFD6D8297E}" ShortID="704193094">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Yes" ID="{BD6E51AD-22F4-4BC8-BF9A-047822B57766}"/>
+												<CustomState Name="" ID="{8EBA92AC-82B2-40CB-867F-30BC25D23EB0}" ShortID="815445807"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{5F7FD2AA-5B16-4DD5-8C9B-5B7E0ED5AC27}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{B9B2F1E8-A507-496A-877F-E358DBE3B70C}">
+											<ClipList>
+												<MusicClip Name="WheresTheCakeSynthArp" ID="{72A4AC8B-219F-4049-83B3-732970E7DEE6}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="15360"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="WheresTheCakeSynthArp" ID="{4F92D5CE-EB18-4BE3-980B-F6F6D453ED17}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="WheresTheCakeTomsLayer" ID="{7FC1AE90-A869-4323-AF94-F9BD5F898CCF}" ShortID="451486416">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WheresTheCakeTomsLayer" ID="{064D8503-BB31-4D07-872A-34BA24959616}" ShortID="192542880">
+											<Language>SFX</Language>
+											<AudioFile>WheresTheCakeTomsLayer.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo MusicSyncType="3">
+												<StateGroupRef Name="Enemy_Aware" ID="{4B3F48E2-5E49-400E-8F33-1F12A07230C6}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="No" ID="{EC8ECBC7-FF2D-4192-A1FA-B188B307B1F1}"/>
+												<CustomState Name="" ID="{40251D91-9FBA-46C8-BAD0-140833352310}" ShortID="158250421">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Yes" ID="{BD6E51AD-22F4-4BC8-BF9A-047822B57766}"/>
+												<CustomState Name="" ID="{A410AF7B-D5AD-4439-8CEC-BD6F144F5FD3}" ShortID="622182703"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{6A551434-8DEB-43DE-9928-D118BF9CAB8E}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{5E15B486-8D98-4238-9A76-BB8355DEEBB7}">
+											<ClipList>
+												<MusicClip Name="WheresTheCakeTomsLayer" ID="{31A82354-A832-42F0-B460-37E835CE9838}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="15360"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="WheresTheCakeTomsLayer" ID="{064D8503-BB31-4D07-872A-34BA24959616}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{27D513FC-0F28-4453-990C-4D80C0C8AD66}">
+									<PropertyList>
+										<Property Name="TimeMs" Type="Real64" Value="1.36424205265939E-12"/>
+									</PropertyList>
+								</MusicCue>
+								<MusicCue Name="Exit Cue" ID="{85BB4D3D-B1CC-4A04-8F26-E1F9A8880F26}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="19200"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="WheresTheCakeFinal_B" ID="{2AAE4EF1-8D9E-4A3F-8E26-BC94F3AAEB25}" ShortID="988126750">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="92160"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0822EF99-B233-4E26-B44A-E4B4795832C9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="WheresTheCakeFinal" ID="{B28BA5B3-66AF-4FEE-999C-B6EA40B4B8B9}" ShortID="85939225">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WheresTheCakeFinal" ID="{49B87D94-760D-40A2-B378-9887F8E0E990}" ShortID="706859684">
+											<Language>SFX</Language>
+											<AudioFile>WheresTheCakeFinal.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="226429881"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{FDA5DB38-32BA-4A02-9588-7F1ACCF0CAD6}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{AA984731-1B3A-4B72-9785-9F1EC922AB61}">
+											<ClipList>
+												<MusicClip Name="WheresTheCakeFinal" ID="{AA7298CC-BF15-4162-870C-98743F01036B}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="26880"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="42240"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-26880"/>
+													</PropertyList>
+													<AudioSourceRef Name="WheresTheCakeFinal" ID="{49B87D94-760D-40A2-B378-9887F8E0E990}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{47656548-1CFA-407D-A5F2-A05D129A4685}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>26.88</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>42.24</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{17E70294-F25F-4847-B311-346DB5F6AFC2}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>26.88</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>42.24</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{7E7F91CB-9A09-448B-B30B-0B3962EBD46F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>26.88</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>42.24</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="WheresTheCakeSynthArp" ID="{B226E2FA-516A-4211-93F9-4234DD8BD7A0}" ShortID="76088657">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WheresTheCakeSynthArp" ID="{7283F2E7-67C8-4E45-ADDB-102A8C734702}" ShortID="153507943">
+											<Language>SFX</Language>
+											<AudioFile>WheresTheCakeSynthArp.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="559594319"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo MusicSyncType="3">
+												<StateGroupRef Name="Enemy_Aware" ID="{4B3F48E2-5E49-400E-8F33-1F12A07230C6}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="No" ID="{EC8ECBC7-FF2D-4192-A1FA-B188B307B1F1}"/>
+												<CustomState Name="" ID="{978D711B-038C-436C-9D8A-5FDB87F1D5A3}" ShortID="1065851175">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Yes" ID="{BD6E51AD-22F4-4BC8-BF9A-047822B57766}"/>
+												<CustomState Name="" ID="{B31CDD83-2E3A-4370-846D-5F5D40F644B5}" ShortID="551964488"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{2429EF8E-93BF-44CC-AD6D-0099C441A72D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{CA212B6E-ACD9-423E-834B-B6E0F52BABC8}">
+											<ClipList>
+												<MusicClip Name="WheresTheCakeSynthArp" ID="{174B188F-6F3B-48C8-9401-DA9847FE4FEF}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="15360"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="WheresTheCakeSynthArp" ID="{7283F2E7-67C8-4E45-ADDB-102A8C734702}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="WheresTheCakeTomsLayer" ID="{BBDAEC82-E9EA-4005-BE26-B4ABD672380A}" ShortID="968158497">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WheresTheCakeTomsLayer" ID="{6B590706-BA0C-45D8-8D2F-D8AA9776A22A}" ShortID="906364210">
+											<Language>SFX</Language>
+											<AudioFile>WheresTheCakeTomsLayer.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="192542880"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo MusicSyncType="3">
+												<StateGroupRef Name="Enemy_Aware" ID="{4B3F48E2-5E49-400E-8F33-1F12A07230C6}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="No" ID="{EC8ECBC7-FF2D-4192-A1FA-B188B307B1F1}"/>
+												<CustomState Name="" ID="{840A20F7-6090-435C-BD67-A6470D046DBB}" ShortID="697069846">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Yes" ID="{BD6E51AD-22F4-4BC8-BF9A-047822B57766}"/>
+												<CustomState Name="" ID="{5B58AF55-BEFA-4342-8A60-15C85EA3DD3D}" ShortID="719295062"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{1AB6A041-1DBC-438B-981E-9F569662447C}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{4651F44F-A65E-4A72-8E6A-366F0CC73C20}">
+											<ClipList>
+												<MusicClip Name="WheresTheCakeTomsLayer" ID="{9A92D2B9-65F6-4B68-AE31-AC9A9B7EEBC9}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="15360"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="WheresTheCakeTomsLayer" ID="{6B590706-BA0C-45D8-8D2F-D8AA9776A22A}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{1D55BA6C-0A77-4220-8369-BE855AB2843D}"/>
+								<MusicCue Name="Exit Cue" ID="{04425970-B2D6-4A28-BA03-9AB489089B35}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="15360"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="WheresTheCakeFinal_C" ID="{EA53F53F-7178-4B7A-AD8B-3DC7B4DF1B39}" ShortID="878229154">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="53760.0000000001"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0822EF99-B233-4E26-B44A-E4B4795832C9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="WheresTheCakeTomsLayerBeat" ID="{1D9F5046-A318-430A-8F67-BD489F0445B4}" ShortID="593619282">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WheresTheCakeTomsLayerBeat" ID="{000C6943-2DF5-4133-8354-7D011A7E1CD3}" ShortID="329791831">
+											<Language>SFX</Language>
+											<AudioFile>WheresTheCakeTomsLayerBeat.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo MusicSyncType="3">
+												<StateGroupRef Name="Enemy_Aware" ID="{4B3F48E2-5E49-400E-8F33-1F12A07230C6}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="No" ID="{EC8ECBC7-FF2D-4192-A1FA-B188B307B1F1}"/>
+												<CustomState Name="" ID="{FEA7951E-C0EC-4758-9786-E868C4754DDA}" ShortID="586527771">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Yes" ID="{BD6E51AD-22F4-4BC8-BF9A-047822B57766}"/>
+												<CustomState Name="" ID="{B1CB472F-7488-4522-A509-E7DF510DB455}" ShortID="574650020"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{012473D2-B176-407E-9B5B-89052E9486D0}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{DEF1562F-789A-4919-BAD0-8216B48CED60}">
+											<ClipList>
+												<MusicClip Name="WheresTheCakeTomsLayerBeat" ID="{ADE905D2-8CEF-4D8D-83F0-43595CC06B48}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="15360"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="WheresTheCakeTomsLayerBeat" ID="{000C6943-2DF5-4133-8354-7D011A7E1CD3}"/>
+												</MusicClip>
+												<MusicClip Name="WheresTheCakeTomsLayerBeat" ID="{B26F9314-DFED-48DF-8806-3A4FD282501E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="15360"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="4234.89139552609"/>
+														<Property Name="FadeOutShape" Type="int16" Value="2"/>
+														<Property Name="PlayAt" Type="Real64" Value="15360"/>
+													</PropertyList>
+													<AudioSourceRef Name="WheresTheCakeTomsLayerBeat" ID="{000C6943-2DF5-4133-8354-7D011A7E1CD3}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="WheresTheCakeFinalC" ID="{97D253B2-88C6-4CCD-93BB-DEE35D77B399}" ShortID="10569148">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WheresTheCakeFinalC" ID="{B7177227-B159-47B1-981B-531C173DA68F}" ShortID="609967174">
+											<Language>SFX</Language>
+											<AudioFile>WheresTheCakeFinalC.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{47BEDB1D-C98B-4CBC-B3C4-C4BE0D6F272B}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{49FE459D-60BB-455B-82FB-28011249C389}">
+											<ClipList>
+												<MusicClip Name="WheresTheCakeFinalC" ID="{8F89BC11-EB6A-47FB-9527-897A1D470758}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="19200"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="38400"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2889.08552268381"/>
+														<Property Name="FadeOutShape" Type="int16" Value="2"/>
+														<Property Name="PlayAt" Type="Real64" Value="-19200"/>
+													</PropertyList>
+													<AudioSourceRef Name="WheresTheCakeFinalC" ID="{B7177227-B159-47B1-981B-531C173DA68F}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{5A8320A8-F225-4EBA-B853-12E4E92B6F8D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>19.2</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>38.4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{C66B2BD6-EE30-4D4E-B42B-0641C45D5734}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>19.2</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>38.4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{EA04CF01-2DB0-444D-85DE-6B4CF0ECAE85}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>19.2</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>38.4</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="C 2nd Part" ID="{695518F9-AA89-4484-9662-D7C2A5592AE4}" ShortID="317727635">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WheresTheCakeFinalC" ID="{CC4E239E-226B-4DE8-8322-0B841A36564A}" ShortID="627939325">
+											<Language>SFX</Language>
+											<AudioFile>WheresTheCakeFinalC.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="609967174"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{85172723-473A-423E-929C-CBB849D954E6}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{815FBFF5-B30A-41AB-A882-51C0B0CEEF7D}">
+											<ClipList>
+												<MusicClip Name="WheresTheCakeFinalC" ID="{F76C9A50-B97E-4BFF-A8E8-7A058984DD5C}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="34560"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="53760"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="5817.15851033804"/>
+														<Property Name="FadeOutShape" Type="int16" Value="2"/>
+														<Property Name="PlayAt" Type="Real64" Value="-19200"/>
+													</PropertyList>
+													<AudioSourceRef Name="WheresTheCakeFinalC" ID="{CC4E239E-226B-4DE8-8322-0B841A36564A}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{3ED7BCBE-852F-49C9-9F3A-D6B6F956EACF}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>34.56</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>53.76</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{3DB344BD-7454-4359-9889-07097BA69834}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>34.56</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>53.76</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{D577FC9F-31A9-4ACB-958F-D7F3B7F4ED5F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>34.56</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>53.76</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{CFA69722-8146-4169-B1C2-04B862350B83}"/>
+								<MusicCue Name="Exit Cue" ID="{E600C311-59D4-418E-B398-4377DB497B3C}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="34560"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="WheresTheCakeFinal_A_Drums" ID="{27B11478-4463-4954-87D6-3EAFBCAA3A4F}" ShortID="221252926">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="92160"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0822EF99-B233-4E26-B44A-E4B4795832C9}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="WheresTheCakeFinal" ID="{A959818F-7BB4-4A8C-A592-8E55AC9AE8A7}" ShortID="967269815">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WheresTheCakeFinal" ID="{7259AE1E-0264-4601-BC77-CD99B8E58C49}" ShortID="793708899">
+											<Language>SFX</Language>
+											<AudioFile>WheresTheCakeFinal.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="226429881"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{D1690B2D-8B64-4C9D-8E38-CEAA78AA6346}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{1D2C6206-B2CE-405E-8C35-2E42A45163E1}">
+											<ClipList>
+												<MusicClip Name="WheresTheCakeFinal" ID="{B4F944FF-E4C4-48A6-8664-D19B9262F9A3}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="42240"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="76800"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-42240"/>
+													</PropertyList>
+													<AudioSourceRef Name="WheresTheCakeFinal" ID="{7259AE1E-0264-4601-BC77-CD99B8E58C49}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{F07EAE50-68BC-4D0E-9B12-78AE8EAC56A2}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>42.24</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>76.8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{9593C0BE-9F27-4AC9-8FE4-4C95FAEFCC22}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>42.24</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>76.8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{CBB68557-A78E-4C22-B659-FA7E671440CE}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>42.24</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>76.8</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+								<MusicTrack Name="WheresTheCakeSynthArp" ID="{403EA646-F720-45D7-8C3F-156D35F91C6F}" ShortID="124148084">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E4540C47-1388-4095-BEC4-7EEE4FA13710}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="WheresTheCakeSynthArp" ID="{DB8B395B-ABB8-451F-A102-FFEBFAEF1E58}" ShortID="720869430">
+											<Language>SFX</Language>
+											<AudioFile>WheresTheCakeSynthArp.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="559594319"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo MusicSyncType="3">
+												<StateGroupRef Name="Enemy_Aware" ID="{4B3F48E2-5E49-400E-8F33-1F12A07230C6}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="No" ID="{EC8ECBC7-FF2D-4192-A1FA-B188B307B1F1}"/>
+												<CustomState Name="" ID="{0346A339-C4F6-4C40-9C14-DC980E86CFD7}" ShortID="826182281">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Yes" ID="{BD6E51AD-22F4-4BC8-BF9A-047822B57766}"/>
+												<CustomState Name="" ID="{52344090-F0DC-4F6F-9F19-B9138DA77A13}" ShortID="968529502"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{E827D2CA-4E82-49C5-ACA9-303934C4B707}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{EDE459D0-AD51-42C4-AE06-9C915B9FB0CD}">
+											<ClipList>
+												<MusicClip Name="WheresTheCakeSynthArp" ID="{A9578FFD-3842-4C5E-BBF9-AE6DBDAA713C}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="15360"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="WheresTheCakeSynthArp" ID="{DB8B395B-ABB8-451F-A102-FFEBFAEF1E58}"/>
+												</MusicClip>
+												<MusicClip Name="WheresTheCakeSynthArp" ID="{3C61AF74-4624-4D81-8D38-45A2CAF54489}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="15360"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="15360"/>
+													</PropertyList>
+													<AudioSourceRef Name="WheresTheCakeSynthArp" ID="{DB8B395B-ABB8-451F-A102-FFEBFAEF1E58}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{FDCA0547-F274-454B-B00E-D73A5DE075D8}"/>
+								<MusicCue Name="Exit Cue" ID="{B1986795-A2A3-442C-96F3-8CB9BA3446FD}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="34560"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+					</ChildrenList>
+					<TransitionList>
+						<MusicTransition Name="Root" ID="{4674AC1D-AD4F-4DA4-9C5C-8A4EEFBA27A4}">
+							<PropertyList>
+								<Property Name="IsFolder" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicTransition Name="Transition" ID="{98479EA7-B72D-4806-BCD0-E052A81C56F5}">
+									<TransitionInfo/>
+								</MusicTransition>
+							</ChildrenList>
+							<TransitionInfo/>
+						</MusicTransition>
+					</TransitionList>
+					<Playlist>
+						<MusicPlaylistItem Name="" ID="{E3ECB23D-2CEC-4DC5-B8C2-93F22740381D}" ShortID="584395980">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{D2F257D3-A021-4AF9-ADAF-DE331665E0C5}" ShortID="600853632">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="WheresTheCakeFinal_Intro" ID="{87FC76BD-CF63-4312-BF36-DBA5AF0FD0F2}"/>
+								</MusicPlaylistItem>
+								<MusicPlaylistItem Name="" ID="{B10C95DB-0BAA-4B62-BCB4-C64E5B70F4BB}" ShortID="143171569">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="WheresTheCakeFinal_A" ID="{DCF60301-49FD-4C65-8A1C-6B5E43D15354}"/>
+								</MusicPlaylistItem>
+								<MusicPlaylistItem Name="" ID="{ECEBF995-8BF4-4C81-8D20-DC70D246D727}" ShortID="731536210">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="WheresTheCakeFinal_B" ID="{2AAE4EF1-8D9E-4A3F-8E26-BC94F3AAEB25}"/>
+								</MusicPlaylistItem>
+								<MusicPlaylistItem Name="" ID="{E046FE70-2BE3-4693-ABEB-8BEF344CF07F}" ShortID="849578995">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="WheresTheCakeFinal_A_Drums" ID="{27B11478-4463-4954-87D6-3EAFBCAA3A4F}"/>
+								</MusicPlaylistItem>
+								<MusicPlaylistItem Name="" ID="{FA1F87E5-D720-40DE-9567-9EF9191C8F49}" ShortID="316352141">
+									<PropertyList>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="WheresTheCakeFinal_C" ID="{EA53F53F-7178-4B7A-AD8B-3DC7B4DF1B39}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
+					</Playlist>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>
