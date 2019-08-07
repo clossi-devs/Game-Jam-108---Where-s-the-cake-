@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d556f189a04bb4746b9547e3312ca10f, type: 3}
+  m_Name: 863DFF35-FC66-4622-9F24-7A64A1C26FBD
+  m_EditorClassIdentifier: 
+  objectName: Gun_Shot
+  id: 3666238164
+  guid: 863DFF35-FC66-4622-9F24-7A64A1C26FBD

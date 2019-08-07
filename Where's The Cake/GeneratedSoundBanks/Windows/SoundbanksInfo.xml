@@ -21,6 +21,7 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3666238164" Name="Gun_Shot" ObjectPath="\Events\Default Work Unit\Gun_Shot" DurationType="OneShot" DurationMin="2.173461" DurationMax="3.156801"/>
 				<Event Id="3725903807" Name="Music_Start" ObjectPath="\Events\Default Work Unit\Music_Start" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -43,6 +44,22 @@
 				<File Id="609967174" Language="SFX">
 					<ShortName>WheresTheCakeFinalC.wav</ShortName>
 					<Path>SFX\WheresTheCakeFinalC_D79FB2B7.wem</Path>
+				</File>
+				<File Id="704006255" Language="SFX">
+					<ShortName>GunShot.wav</ShortName>
+					<Path>SFX\GunShot_7022E990.wem</Path>
+				</File>
+				<File Id="712125958" Language="SFX">
+					<ShortName>GunShot.wav</ShortName>
+					<Path>SFX\GunShot_7D6E1E75.wem</Path>
+				</File>
+				<File Id="759279080" Language="SFX">
+					<ShortName>GunShot.wav</ShortName>
+					<Path>SFX\GunShot_6C755D78.wem</Path>
+				</File>
+				<File Id="905969052" Language="SFX">
+					<ShortName>GunShot.wav</ShortName>
+					<Path>SFX\GunShot_D40B9948.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

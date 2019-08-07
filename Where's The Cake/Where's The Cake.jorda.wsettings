@@ -4,6 +4,7 @@
 		<UserProjectSettings Name="" ID="{141CF0EC-2380-4FBD-94B4-BDE11DCFA49A}">
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\jorda\Documents\Ableton\Projects\WheresTheCake Project"/>
+				<Property Name="Event Action List\{863DFF35-FC66-4622-9F24-7A64A1C26FBD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{EF970CDC-2176-4261-AEBB-0823075F80EC}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">

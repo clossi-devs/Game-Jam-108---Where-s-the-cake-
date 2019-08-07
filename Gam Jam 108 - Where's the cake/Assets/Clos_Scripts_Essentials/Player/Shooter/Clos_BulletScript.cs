@@ -39,6 +39,8 @@ public class Clos_BulletScript : MonoBehaviour
     {
         if (usingDmg) { if (!this.GetComponent<Rigidbody>()) { Debug.LogWarning("Mising Rigidbody Component."); } }
         DestroyAfterSeconds();
+        // - Audio
+        AkSoundEngine.PostEvent("Gun_Shot", gameObject);
     }
 
     void FixedUpdate ()

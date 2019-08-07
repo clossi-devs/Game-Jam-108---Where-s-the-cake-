@@ -37,6 +37,7 @@ public class Clos_ShooterScript : MonoBehaviour
         GameObject go = Instantiate(bullet, Vector3.zero, Quaternion.identity);
         go.transform.position = bulletSpawn.transform.position;
         go.transform.rotation = bulletSpawn.transform.rotation;
+
     }
 
     private void Fire ()
@@ -47,6 +48,7 @@ public class Clos_ShooterScript : MonoBehaviour
             {
                 SpawnBullet();
                 if (delayRefire) { canFire = false; StartCoroutine(WaitForRefire()); }
+                
             }
         }
     }
