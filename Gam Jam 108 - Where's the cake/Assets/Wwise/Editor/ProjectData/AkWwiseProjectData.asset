@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 470c54e488139540bec47eee4fa13710
     GuidInternal: 
-    m_lastTime: -8586367570714775808
+    m_lastTime: -8586364127614775808
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
@@ -47,20 +47,20 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: fbfaaee8a795464bbbb644b1f7853eac
     GuidInternal: 
-    m_lastTime: -8586367565294775808
+    m_lastTime: -8586364127614775808
     List:
-    - name: New_Event
+    - name: Music_Start
       guid: dc0c97ef76216142aebb0823075f80ec
-      id: 3050945240
+      id: 3725903807
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: New_Event
+      - ElementName: Music_Start
         ObjectType: 3
-      Path: Default Work Unit\New_Event
+      Path: Default Work Unit\Music_Start
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -73,8 +73,39 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: b948d2bf92fe43498683610fba206377
     GuidInternal: 
-    m_lastTime: -8586367570714775808
-    List: []
+    m_lastTime: -8586364108134775808
+    List:
+    - name: Enemy_Aware
+      guid: e2483f4b495e0e408f331f12a07230c6
+      id: 3940318752
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Enemy_Aware
+        ObjectType: 9
+      Path: Default Work Unit\Enemy_Aware
+      values:
+      - name: No
+        guid: c7cb8eec2dff9241a1fab188b307b1f1
+        id: 1668749452
+        PathAndIcons:
+        - ElementName: No
+          ObjectType: 8
+      - name: None
+        guid: bbcc6b2e4e946c49889d878bd7a073d2
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Yes
+        guid: ad516ebdf422c84bbf9a047822b57766
+        id: 979470758
+        PathAndIcons:
+        - ElementName: Yes
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -91,5 +122,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Where's The Cake
+  - /Where's The Cake/States
+  - /Where's The Cake/States/Default Work Unit
+  - /Where's The Cake/States/Default Work Unit/Enemy_Aware
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

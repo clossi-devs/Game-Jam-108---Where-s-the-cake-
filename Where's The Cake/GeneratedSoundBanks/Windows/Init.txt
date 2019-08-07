@@ -1,5 +1,14 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3940318752	Enemy_Aware			\Default Work Unit\Enemy_Aware	
+
+State	ID	Name	State Group			Notes
+	0	None	Enemy_Aware			
+	979470758	Yes	Enemy_Aware			
+	1668749452	No	Enemy_Aware			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

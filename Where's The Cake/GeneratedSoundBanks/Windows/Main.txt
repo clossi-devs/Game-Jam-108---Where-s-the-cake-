@@ -1,3 +1,26 @@
 Event	ID	Name			Wwise Object Path	Notes
-	3050945240	New_Event			\Default Work Unit\New_Event	
+	3725903807	Music_Start			\Default Work Unit\Music_Start	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3940318752	Enemy_Aware			\Default Work Unit\Enemy_Aware	
+
+State	ID	Name	State Group			Notes
+	0	None	Enemy_Aware			
+	979470758	Yes	Enemy_Aware			
+	1668749452	No	Enemy_Aware			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	158250421	No	Enemy_Aware	\Interactive Music Hierarchy\Default Work Unit\General\WheresTheCakeFinal_A\WheresTheCakeTomsLayer		
+	586527771	No	Enemy_Aware	\Interactive Music Hierarchy\Default Work Unit\General\WheresTheCakeFinal_C\WheresTheCakeTomsLayerBeat		
+	697069846	No	Enemy_Aware	\Interactive Music Hierarchy\Default Work Unit\General\WheresTheCakeFinal_B\WheresTheCakeTomsLayer		
+	704193094	No	Enemy_Aware	\Interactive Music Hierarchy\Default Work Unit\General\WheresTheCakeFinal_A\WheresTheCakeSynthArp		
+	826182281	No	Enemy_Aware	\Interactive Music Hierarchy\Default Work Unit\General\WheresTheCakeFinal_A_Drums\WheresTheCakeSynthArp		
+	1065851175	No	Enemy_Aware	\Interactive Music Hierarchy\Default Work Unit\General\WheresTheCakeFinal_B\WheresTheCakeSynthArp		
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	192542880	WheresTheCakeTomsLayer	E:\Game Jams\Week 108\Game-Jam-108---Where-s-the-cake-\Where's The Cake\.cache\Windows\SFX\WheresTheCakeTomsLayer_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\General\WheresTheCakeFinal_A\WheresTheCakeTomsLayer		2709568
+	226429881	WheresTheCakeFinal	E:\Game Jams\Week 108\Game-Jam-108---Where-s-the-cake-\Where's The Cake\.cache\Windows\SFX\WheresTheCakeFinal_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\General\WheresTheCakeFinal_Intro\WheresTheCakeFinal		16257088
+	329791831	WheresTheCakeTomsLayerBeat	E:\Game Jams\Week 108\Game-Jam-108---Where-s-the-cake-\Where's The Cake\.cache\Windows\SFX\WheresTheCakeTomsLayerBeat_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\General\WheresTheCakeFinal_C\WheresTheCakeTomsLayerBeat		2709568
+	559594319	WheresTheCakeSynthArp	E:\Game Jams\Week 108\Game-Jam-108---Where-s-the-cake-\Where's The Cake\.cache\Windows\SFX\WheresTheCakeSynthArp_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\General\WheresTheCakeFinal_A\WheresTheCakeSynthArp		2709568
+	609967174	WheresTheCakeFinalC	E:\Game Jams\Week 108\Game-Jam-108---Where-s-the-cake-\Where's The Cake\.cache\Windows\SFX\WheresTheCakeFinalC_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\General\WheresTheCakeFinal_C\WheresTheCakeFinalC		9483328
 
