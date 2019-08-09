@@ -166,7 +166,7 @@ ModelImporter:
       name: ChefArmature|Walking
       takeName: ChefArmature|Walking
       internalID: -3286273348334377604
-      firstFrame: 0
+      firstFrame: 20
       lastFrame: 59
       wrapMode: 0
       orientationOffsetY: 0
