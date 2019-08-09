@@ -89,7 +89,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6369895246509344864}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -110,13 +110,13 @@ MonoBehaviour:
   destroyThis: 1
   lifeSpan: 3
   moveOnSpawn: 1
-  speed: 6
+  speed: 20
   moveX: 0
   moveY: 0
   moveZ: 1
   usingDmg: 1
   tagToDmg: Enemy
-  dmg: 10
+  dmg: 20
 --- !u!54 &-8643664018955275301
 Rigidbody:
   m_ObjectHideFlags: 0
