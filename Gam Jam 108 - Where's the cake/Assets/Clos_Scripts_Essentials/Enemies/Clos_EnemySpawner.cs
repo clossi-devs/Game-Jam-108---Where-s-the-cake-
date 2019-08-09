@@ -9,10 +9,14 @@ public class Clos_EnemySpawner : MonoBehaviour
     public GameObject enemy;
     public float secondsToWait = 1.0f;
     public string targetTag = "Player";
+    public int maxEnemies = 10;
+
+    private List<GameObject> enemies;
 
     void Start ()
     {
         spawning = spawnOnStart;
+        enemies = new List<GameObject>();
         if (spawning) { SpawnEnemy(); StartCoroutine(WaitToSpawn()); }
     }
 
@@ -24,7 +28,17 @@ public class Clos_EnemySpawner : MonoBehaviour
 
     private void SpawnEnemy ()
     {
-        Instantiate(enemy, this.transform.position, Quaternion.identity);
+        CleanEnemyList();
+
+        if (enemies.Count < maxEnemies)
+        {
+            enemies.Add(Instantiate(enemy, this.transform.position, Quaternion.identity));
+        }
+    }
+
+    private void CleanEnemyList ()
+    {
+        for (int i=enemies.Count-1; i>0; i--) { if (enemies[i] == null) { enemies.RemoveAt(i); } }
     }
 
     void OnTriggerEnter (Collider other)
