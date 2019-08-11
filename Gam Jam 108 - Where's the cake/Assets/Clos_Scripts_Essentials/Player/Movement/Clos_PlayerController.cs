@@ -12,17 +12,17 @@ using UnityEngine.SceneManagement;
 public class Clos_PlayerController : MonoBehaviour
 {
 
-	// ****************
-	// ** Settings
-	// ****************
+    // ****************
+    // ** Settings
+    // ****************
 
-	private Rigidbody rb;
-    
-	// ** Movement
-	private float forward = 0.0f;
+    private Rigidbody rb;
+
+    // ** Movement
+    private float forward = 0.0f;
     private float side = 0.0f;
-	private float rotate = 0.0f;
-	private Quaternion currentRotation;
+    private float rotate = 0.0f;
+    private Quaternion currentRotation;
 
     [Header("Movement Settings")]
     [Tooltip("Sets if this object can move forwards and backwards.")]
@@ -42,13 +42,13 @@ public class Clos_PlayerController : MonoBehaviour
     public string runKey = "space";
     public string rotLeftKey = "left";
     public string rotRightKey = "right";
-    
-	[Header("Movement Speeds")]
-	public float forwardWalkingSpeed = 6.0f;
+
+    [Header("Movement Speeds")]
+    public float forwardWalkingSpeed = 6.0f;
     public float sideWalkingSpeed = 6.0f;
-	public float rotateSpeed = 100.0f;
-	[Tooltip("Multiplies the Forward Walking Speed by the set number.")]
-	public float runningMultiplier = 2.0f;
+    public float rotateSpeed = 100.0f;
+    [Tooltip("Multiplies the Forward Walking Speed by the set number.")]
+    public float runningMultiplier = 2.0f;
 
     // ** Look Settings
     [Header("Look Settings")]
@@ -56,6 +56,8 @@ public class Clos_PlayerController : MonoBehaviour
     public bool usingLookAt;
     [Tooltip("Set the GameObject for this object to look at when spawning.")]
     public GameObject lookAtName; // This can either be a string or GameObject
+
+    private PlayerAnimatorManager playerAnimator;
 
     // ********************
     // ** Main Functions
@@ -80,14 +82,15 @@ public class Clos_PlayerController : MonoBehaviour
     // *************************
 
     // Set the initial settings.
-    private void InitializePlayer ()
+    private void InitializePlayer()
     {
-    	rb = this.GetComponent<Rigidbody>();
+        rb = this.GetComponent<Rigidbody>();
+        playerAnimator = this.GetComponent<PlayerAnimatorManager>();
     }
 
     // Find an object for the player to look at
     // when spawning.
-    public void OnSpawnLookAt (GameObject obj)
+    public void OnSpawnLookAt(GameObject obj)
     {
         if (usingLookAt) { this.transform.LookAt(obj.transform.position); }
     }
@@ -96,9 +99,9 @@ public class Clos_PlayerController : MonoBehaviour
     // ******************************
     // ** Scene management section
     // ******************************
-    private void SceneChange (string scene)
+    private void SceneChange(string scene)
     {
-    	SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("GameOver");
     }
 
 
@@ -108,15 +111,28 @@ public class Clos_PlayerController : MonoBehaviour
 
     private void Move()
     {
-    	ChangeSpeed();
-    	MovePlayerForward();
+        ChangeSpeed();
+        MovePlayerForward();
         MovePlayerSideways();
-    	RotatePlayer();	
+        RotatePlayer();
+        UpdateAnimation();
     }
 
-    private void MovePlayerForward ()
+    private void UpdateAnimation()
     {
-        if (canMoveForward) { transform.Translate(Vector3.forward * forward * Time.deltaTime); }
+        if (forward != 0)
+            playerAnimator.SetRunning();
+        else
+            playerAnimator.SetIdle();
+    }
+
+    private void MovePlayerForward()
+    {
+        if (canMoveForward)
+        {
+            transform.Translate(Vector3.forward * forward * Time.deltaTime);
+            playerAnimator.SetRunning();
+        }
     }
 
     private void MovePlayerSideways()
@@ -124,7 +140,7 @@ public class Clos_PlayerController : MonoBehaviour
         if (canMoveSideways) { transform.Translate(Vector3.right * side * Time.deltaTime); }
     }
 
-    private void RotatePlayer ()
+    private void RotatePlayer()
     {
         if (canRotate)
         {
@@ -135,21 +151,21 @@ public class Clos_PlayerController : MonoBehaviour
 
     // ** Set Speeds
 
-    private void SetRotation ()
+    private void SetRotation()
     {
         if (canRotate) { currentRotation = this.transform.rotation; }
     }
 
-    private void ChangeSpeed ()
+    private void ChangeSpeed()
     {
-    	ForwardSpeed();
+        ForwardSpeed();
         SideSpeed();
-    	RotateSpeed();
-    	RunningSpeed();
+        RotateSpeed();
+        RunningSpeed();
     }
 
     // Back speed is just negative forward speed.
-    private void ForwardSpeed ()
+    private void ForwardSpeed()
     {
         if (canMoveForward)
         {
@@ -169,7 +185,7 @@ public class Clos_PlayerController : MonoBehaviour
         }
     }
 
-    private void RotateSpeed ()
+    private void RotateSpeed()
     {
         if (canRotate)
         {
@@ -179,7 +195,7 @@ public class Clos_PlayerController : MonoBehaviour
         }
     }
 
-    private void RunningSpeed ()
+    private void RunningSpeed()
     {
         if (canRun)
         {

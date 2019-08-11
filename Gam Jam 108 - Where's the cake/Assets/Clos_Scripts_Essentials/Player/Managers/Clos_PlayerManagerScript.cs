@@ -19,20 +19,21 @@ public class Clos_PlayerManagerScript : MonoBehaviour
     public int maxHP = 100;
     public int bonusHP = 0;
 
-
     private PlayerStats ps;
+    private PlayerAnimatorManager playerAnimator;
 
     // *********************
     // ** Initializations
     // *********************
-    void Start ()
+    void Start()
     {
         InitializePlayerStats();
+        playerAnimator = this.GetComponent<PlayerAnimatorManager>();
     }
 
-    private void InitializePlayerStats ()
+    private void InitializePlayerStats()
     {
-        if(Clos_PlayerStats)
+        if (Clos_PlayerStats)
         {
             ps = new PlayerStats();
             if (usingCustomStats) { ps.SetValues(startingHP, minHP, maxHP, bonusHP); }
@@ -44,22 +45,26 @@ public class Clos_PlayerManagerScript : MonoBehaviour
     // **************************
 
     // ** Health Section
-    public void DamagePlayer (int dmg)
+    public void DamagePlayer(int dmg)
     {
-        if (Clos_PlayerStats) { ps.TakeHP(dmg); }
+        if (Clos_PlayerStats)
+        {
+            ps.TakeHP(dmg);
+            playerAnimator.SetGettingHit();
+        }
     }
 
-    public void HealPlayer (int gain)
+    public void HealPlayer(int gain)
     {
         if (Clos_PlayerStats) { ps.GainHP(gain); }
     }
 
-    public void MaxHealPlayer ()
+    public void MaxHealPlayer()
     {
         if (Clos_PlayerStats) { ps.ResetHP(); }
     }
 
-    public void SetPlayerMaxHP (int hp)
+    public void SetPlayerMaxHP(int hp)
     {
         if (Clos_PlayerStats) { ps.maxHP = hp; }
     }
