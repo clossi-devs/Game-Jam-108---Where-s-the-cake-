@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 /// a player GameObject.
 /// https://docs.unity3d.com/Manual/ConventionalGameInput.html
 /// </summary>
-
+[RequireComponent(typeof(Rigidbody))]
 public class Clos_PlayerController : MonoBehaviour
 {
 
@@ -58,6 +58,7 @@ public class Clos_PlayerController : MonoBehaviour
     public GameObject lookAtName; // This can either be a string or GameObject
 
     private PlayerAnimatorManager playerAnimator;
+
 
     // ********************
     // ** Main Functions
