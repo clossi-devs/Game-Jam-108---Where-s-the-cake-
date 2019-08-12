@@ -18,10 +18,12 @@ public class Clos_PlayerManagerScript : MonoBehaviour
     public int minHP = 0;
     public int maxHP = 100;
     public int bonusHP = 0;
+    public int currentHP;
 
     private PlayerStats ps;
     private PlayerAnimatorManager playerAnimator;
 
+    public GameObject WinningCanvas;
     // *********************
     // ** Initializations
     // *********************
@@ -37,6 +39,7 @@ public class Clos_PlayerManagerScript : MonoBehaviour
         {
             ps = new PlayerStats();
             if (usingCustomStats) { ps.SetValues(startingHP, minHP, maxHP, bonusHP); }
+            currentHP = startingHP;
         }
     }
 
@@ -51,6 +54,9 @@ public class Clos_PlayerManagerScript : MonoBehaviour
         {
             ps.TakeHP(dmg);
             playerAnimator.SetGettingHit();
+            currentHP = ps.hp;
+            if (ps.hp <= 0)
+                WinningCanvas.GetComponent<WinLoseMenu>().IsGameLost = true;
         }
     }
 

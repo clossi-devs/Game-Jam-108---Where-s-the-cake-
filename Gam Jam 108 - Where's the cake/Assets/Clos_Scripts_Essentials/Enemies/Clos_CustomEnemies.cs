@@ -25,19 +25,22 @@ public class Clos_CustomEnemies : MonoBehaviour
 
     private EnemyStats es;
 
+    public GameObject WinningCanvas;
+
     // Start is called before the first frame update
     void Start()
     {
         CheckForDependentScripts();
         InitializeEnemyStats();
+        WinningCanvas = GameObject.FindGameObjectWithTag("WinningCanvas");
     }
 
-    private void CheckForDependentScripts ()
+    private void CheckForDependentScripts()
     {
         if (!this.GetComponent<Clos_EnemyStats>()) { Debug.LogWarning("Missing Dependant Script Clos_EnemyStats"); }
     }
 
-    private void InitializeEnemyStats ()
+    private void InitializeEnemyStats()
     {
         es = new EnemyStats();
         es.name = name;
@@ -45,19 +48,21 @@ public class Clos_CustomEnemies : MonoBehaviour
         es.SetCustomAtkValues(atk, bonusAtk);
     }
 
-    public EnemyStats GetEnemyStats ()
+    public EnemyStats GetEnemyStats()
     {
         return es;
     }
 
-    public void TakeEnemyHP (int dmg)
+    public void TakeEnemyHP(int dmg)
     {
         es.TakeHP(dmg);
         if (detroyOnMinHP) { if (es.hp <= es.minHP) { DestroyThisObject(); } }
     }
 
-    public void DestroyThisObject ()
+    public void DestroyThisObject()
     {
         Destroy(this.gameObject);
+        if (name == "boss")
+            WinningCanvas.GetComponent<WinLoseMenu>().IsGameWon = true;
     }
 }

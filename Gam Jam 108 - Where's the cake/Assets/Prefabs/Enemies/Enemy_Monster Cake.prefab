@@ -1083,7 +1083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a98df1eec6f01d4cab6d8543040074d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Default Enemy
+  name: boss
   hp: 500
   maxHP: 500
   minHP: 0
@@ -1091,6 +1091,7 @@ MonoBehaviour:
   atk: 20
   bonusAtk: 0
   detroyOnMinHP: 1
+  WinningCanvas: {fileID: 0}
 --- !u!114 &3506804693198600525
 MonoBehaviour:
   m_ObjectHideFlags: 0

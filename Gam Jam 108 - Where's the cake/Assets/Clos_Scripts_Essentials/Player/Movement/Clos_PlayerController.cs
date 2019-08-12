@@ -121,7 +121,10 @@ public class Clos_PlayerController : MonoBehaviour
 
     private void UpdateAnimation()
     {
-        if (forward != 0)
+        float runningSpeed = forwardWalkingSpeed * runningMultiplier;
+        if (forward == forwardWalkingSpeed || forward == -forwardWalkingSpeed)
+            playerAnimator.SetWalking();
+        else if (forward == runningSpeed || forward == -runningSpeed)
             playerAnimator.SetRunning();
         else
             playerAnimator.SetIdle();
