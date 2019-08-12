@@ -21,26 +21,29 @@ public class Clos_ShooterScript : MonoBehaviour
     [Tooltip("The transform position that the bullet will spawn in.")]
     public GameObject bulletSpawn;
 
+    [Tooltip("Players rotation is used for bullet rotation.")]
+    public GameObject player;
 
-    private void Update ()
+    private void Update()
     {
         Fire();
     }
 
-    public void SetCanFire (bool state)
+    public void SetCanFire(bool state)
     {
         canFire = state;
     }
 
-    private void SpawnBullet ()
+    private void SpawnBullet()
     {
         GameObject go = Instantiate(bullet, Vector3.zero, Quaternion.identity);
         go.transform.position = bulletSpawn.transform.position;
-        go.transform.rotation = bulletSpawn.transform.rotation;
+        Quaternion bulletRotation = player.transform.rotation;
+        go.transform.rotation = bulletRotation;
 
     }
 
-    private void Fire ()
+    private void Fire()
     {
         if (canFire)
         {
@@ -48,12 +51,12 @@ public class Clos_ShooterScript : MonoBehaviour
             {
                 SpawnBullet();
                 if (delayRefire) { canFire = false; StartCoroutine(WaitForRefire()); }
-                
+
             }
         }
     }
 
-    IEnumerator WaitForRefire ()
+    IEnumerator WaitForRefire()
     {
         yield return new WaitForSeconds(refireDelay);
         canFire = true;

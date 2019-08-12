@@ -2851,7 +2851,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 5006512736403133477}
+    m_TransformParent: {fileID: 1901064003}
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: 29193ee44e8a0244daa6c79c8533e755,
         type: 3}
@@ -2876,72 +2876,72 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 29193ee44e8a0244daa6c79c8533e755,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.291
+      value: 0.00035990519
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 29193ee44e8a0244daa6c79c8533e755,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.023
+      value: 0.00016157888
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 29193ee44e8a0244daa6c79c8533e755,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.449
+      value: -0.000105035026
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 29193ee44e8a0244daa6c79c8533e755,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.39092964
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 29193ee44e8a0244daa6c79c8533e755,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.3075015
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 29193ee44e8a0244daa6c79c8533e755,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.4535419
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 29193ee44e8a0244daa6c79c8533e755,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.73953813
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 29193ee44e8a0244daa6c79c8533e755,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 29193ee44e8a0244daa6c79c8533e755,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -58.997
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 29193ee44e8a0244daa6c79c8533e755,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -11.219001
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 29193ee44e8a0244daa6c79c8533e755,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -56.679
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 29193ee44e8a0244daa6c79c8533e755,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.25
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 29193ee44e8a0244daa6c79c8533e755,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.25
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 29193ee44e8a0244daa6c79c8533e755,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.25
+      value: 0.005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29193ee44e8a0244daa6c79c8533e755, type: 3}
@@ -6916,6 +6916,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1900792900}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1901064003 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5795149925720042063, guid: bf032bfd8f3c5764b8721cbcaefb79a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8274406212297133114}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1901646177
 GameObject:
   m_ObjectHideFlags: 0
@@ -8286,6 +8292,7 @@ MonoBehaviour:
   refireDelay: 0.25
   bullet: {fileID: 6369895246509344864, guid: 0e35e1e8754d262488f8871edacdb89c, type: 3}
   bulletSpawn: {fileID: 1678946716}
+  player: {fileID: 8296172667595253302}
 --- !u!114 &8296172667595253305
 MonoBehaviour:
   m_ObjectHideFlags: 0
